@@ -1,0 +1,184 @@
+<template name="waktu_solat">
+
+    <div class="top-bar">
+        <ul class="menu">
+            <li class="menu-text">Waktu Solat</li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="small-12">
+            <div class="card zone">
+                <div class="card-section">
+                    <select class="form-control" id="zone">
+                        <option value="" disabled selected>Pilih negeri dan zon anda</option>
+
+                        <optgroup label="Johor">
+                            <option value="jhr01">Pulau Aur dan Pemanggil</option>
+                            <option value="jhr02">Kota Tinggi, Mersing, Johor Bahru</option>
+                            <option value="jhr03">Kluang dan Pontian</option>
+                            <option value="jhr04">Batu Pahat, Muar, Segamat, Gemas</option>
+                        </optgroup>
+
+                        <optgroup label="Kedah">
+                            <option value="kdh01">Kota Setar, Kubang Pasu, Pokok Sena</option>
+                            <option value="kdh02">Pendang, Kuala Muda, Yan</option>
+                            <option value="kdh03">Padang Terap, Sik</option>
+                            <option value="kdh04">Baling</option>
+                            <option value="kdh05">Kulim, Bandar Bahru</option>
+                            <option value="kdh06">Langkawi</option>
+                            <option value="kdh07">Gunung Jerai</option>
+                        </optgroup>
+
+                        <optgroup label="Kelantan">
+                            <option value="ktn01">K.Bharu, Bachok, Pasir Puteh, Tumpat, Pasir Mas, Tnh. Merah, Machang, Kuala Krai, Mukim Chiku</option>
+                            <option value="ktn03">Jeli, Gua Musang (Mukim Galas, Bertam)</option>
+                        </optgroup>
+
+                        <optgroup label="Kuala Lumpur">
+                            <option value="sgr03">Kuala Lumpur</option>
+                        </optgroup>
+
+                        <optgroup label="Labuan">
+                            <option value="wly02">Labuan</option>
+                        </optgroup>
+
+                        <optgroup label="Melaka">
+                            <option value="mlk01">Bandar Melaka, Alor Gajah, Jasin, Masjid Tanah, Merlimau, Nyalas</option>
+                        </optgroup>
+
+                        <optgroup label="Negeri Sembilan">
+                            <option value="ngs01">Jempol, Tampin</option>
+                            <option value="ngs02">Port Dickson, Seremban, Kuala Pilah, Jelebu, Rembau</option>
+                        </optgroup>
+
+                        <optgroup label="Pahang">
+                            <option value="phg01">Pulau Tioman</option>
+                            <option value="phg02">Kuantan, Pekan, Rompin, Muadzam Shah</option>
+                            <option value="phg03">Maran, Chenor, Temerloh, Bera, Jerantut</option>
+                            <option value="phg04">Bentong, Raub, Kuala Lipis</option>
+                            <option value="phg05">Genting Sempah, Janda Baik, Bukit Tinggi</option>
+                            <option value="phg06">Bukit Fraser, Genting Highlands, Cameron Highlands</option>
+                        </optgroup>
+
+                        <optgroup label="Perak">
+                            <option value="prk01">Tapah, Slim River dan Tanjung Malim</option>
+                            <option value="prk02">Ipoh, Batu Gajah, Kampar, SG. Siput dan Kuala Kangsar</option>
+                            <option value="prk03">Pengkalan Hulu, Grik dan Lenggong</option>
+                            <option value="prk04">Temengor dan Belum</option>
+                            <option value="prk05">Teluk Intan, Bagan Datoh, Kg. Gajah, Sri Iskandar, Beruas, Parit, Lumut, Setiawan dan Pulau Pangkor</option>
+                            <option value="prk06">Selama, Taiping, Bagan Serai dan Parit Buntar</option>
+                            <option value="prk07">Bukit Larut</option>
+                        </optgroup>
+                        <optgroup label="Perlis">
+                            <option value="pls01">Kangar, Padang Besar, Arau</option>
+                        </optgroup>
+
+                        <optgroup label="Pulau Pinang">
+                            <option value="png01">Seluruh Negeri Pulau Pinang</option>
+                        </optgroup>
+
+                        <optgroup label="Putrajaya">
+                            <option value="sgr04">Putrajaya</option>
+                        </optgroup>
+
+                        <optgroup label="Sabah">
+                            <option value="sbh01">Sandakan, Bdr. Bkt. Garam, Semawang, Temanggong, Tambisan</option>
+                            <option value="sbh02">Pinangah, Terusan, Beluran, Kuamut, Telupit</option>
+                            <option value="sbh03">Lahad Datu, Kunak, Silabukan, Tungku, Sahabat, Semporna</option>
+                            <option value="sbh04">Tawau, Balong, Merotai, Kalabakan</option>
+                            <option value="sbh05">Kudat, Kota Marudu, Pitas, Pulau Banggi</option>
+                            <option value="sbh06">Gunung Kinabalu</option>
+                            <option value="sbh07">Papar, Ranau, Kota Belud, Tuaran, Penampang, Kota Kinabalu</option>
+                            <option value="sbh08">Pensiangan, Keningau, Tambunan, Nabawan</option>
+                            <option value="sbh09">Sipitang, Membakut, Beaufort, Kuala Penyu, Weston, Tenom, Long Pa Sia </option>
+                        </optgroup>
+
+                        <optgroup label="Sarawak">
+                            <option value="swk01">Limbang, Sundar, Terusan, Lawas</option>
+                            <option value="swk02">Niah, Belaga, Sibuti, Miri, Bekenu, Marudi</option>
+                            <option value="swk03">Song, Belingan, Sebauh, Bintulu, Tatau, Kapit</option>
+                            <option value="swk04">Igan, Kanowit, Sibu, Dalat, Oya</option>
+                            <option value="swk05">Belawai, Matu, Daro, Sarikei, Julau, Bitangor, Rajang</option>
+                            <option value="swk06">Kabong, Lingga, Sri Aman, Engkelili, Betong, Spaoh, Pusa, Saratok, Roban, Debak</option>
+                            <option value="swk07">Samarahan, Simunjan, Serian, Sebuyau, Meludam</option>
+                            <option value="swk08">Kuching, Bau, Lundu, Sematan</option>
+                            <option value="swk09">Zon Khas</option>
+                        </optgroup>
+
+                        <optgroup label="Selangor">
+                            <option value="sgr01">Gombak, H. Selangor, Rawang, H. Langat, Sepang, Petaling, S. Alam</option>
+                            <option value="sgr02">Sabak Bernam, Kuala Selangor, Klang, Kuala Langat</option>
+                        </optgroup>
+
+                        <optgroup label="Terengganu">
+                            <option value="trg01">Kuala Terengganu, Marang</option>
+                            <option value="trg02">Besut, Setiu </option>
+                            <option value="trg03">Hulu Terengganu</option>
+                            <option value="trg04">Kemaman Dungun</option>
+                        </optgroup>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12">
+            <div class="card">
+                <div class="card-section"> 
+                   <p class="clock">{{getCurrentTime}}</p>
+                    <p class="label"><i class="fa fa-moon-o"></i> {{getMomentHijri}}</p>
+                    <p class="label"><i class="fa fa-calendar"></i> {{mydate getWaktu.date}}</p>
+                    {{#with getWaktu}}
+                    <table class="hover" style="width:100%">
+                        <tr>
+                            <td width="1px;"><span class="wi wi-night-alt-cloudy"></span></td>
+                            <td>Imsak</td>
+                            <td class="time">{{mytime getWaktu.waktu_imsak}} AM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="1px;"><span class="wi wi-night-alt-cloudy"></span></td>
+                            <td>Subuh</td>
+                            <td class="time">{{mytime getWaktu.waktu_subuh}} AM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="1px;"><span class="wi wi-day-cloudy"></span></td>
+                            <td>Syuruk</td>
+                            <td class="time">{{mytime getWaktu.waktu_syuruk}} AM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="1px;"><span class="wi wi-day-sunny"></span></td>
+                            <td>Zohor</td>
+                            <td class="time">{{mytime getWaktu.waktu_zohor}} PM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="1px;"><span class="wi wi-cloudy"></span></td>
+                            <td>Asar</td>
+                            <td class="time">{{mytime getWaktu.waktu_asar}} PM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="1px;"><span class="wi wi-day-cloudy"></span></td>
+                            <td>Maghrib</td>
+                            <td class="time">{{mytime getWaktu.waktu_maghrib}} PM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="1px;"><span class="wi wi-night-clear"></span></td>
+                            <td>Isyak</td>
+                            <td class="time">{{mytime getWaktu.waktu_isyak}} PM</td>
+                        </tr>
+                    </table>
+                    {{/with}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>

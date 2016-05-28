@@ -1,0 +1,78 @@
+$primary-color: #4CAF50;
+$topbar-background: $primary-color;
+$label-font-size: 1em;
+@import '{zurb:foundation-sites}/scss/foundation';
+@include foundation-everything;
+@font-face {
+    font-family: roboto;
+    src: url("fonts/roboto/Roboto-Regular.ttf");
+}@font-face {
+    font-family: digital-7;
+    src: url("fonts/digital-7/digital-7.ttf");
+}
+
+
+/* background color */
+
+body {
+    font-family: roboto;
+    background-color: #EEE
+}
+
+#zone {
+    border: none;
+    border-bottom: 2px solid $primary-color;
+    overflow: hidden;
+}
+
+#zone:focus {
+    outline: none;
+}
+
+.zone {
+    margin-top: 10px;
+}
+
+
+/* custom card */
+
+.card {
+    border-radius: 2px;
+    margin-bottom: 0.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: #ffffff;
+    color: black;
+    font-size: 1em;
+}
+
+.card-section {
+    padding: 1rem;
+}
+
+.time {
+    color: darken($primary-color, 20%);
+    font-weight: bold;
+}
+
+.menu-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.top-bar {
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+}
+.clock {
+    font-family: digital-7;
+    font-size: 3em;
+}
+
